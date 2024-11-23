@@ -1,0 +1,159 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif, 'Helvetica', 'Verdana'; /* Ajout de polices de secours */
+    margin: 0;
+    padding: 0;
+    background-color: #eafaf1; /* Vert très clair */
+    color: #2f4f4f; /* Vert foncé doux */
+    text-align: center;
+}
+
+header {
+    background-color: #4caf50; /* Vert clair de la nature */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Choix des options */
+.choices h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #2e7d32; /* Vert forêt */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: #66bb6a; /* Vert nature */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Effet de transition doux */
+}
+
+button:hover {
+    background-color: #43a047; /* Vert légèrement plus foncé */
+    transform: scale(1.05); /* Légère augmentation de la taille pour l'effet visuel */
+}
+
+/* Conteneur des formulaires */
+#form-container:empty {
+    display: none; /* Cache complètement le conteneur s'il est vide */
+}
+
+#form-container {
+    display: none; /* Cacher au départ */
+    margin-top: 30px;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent; /* Plus de fond blanc */
+    padding: 0; /* Supprime l'espace intérieur */
+    border: none; /* Enlève les bordures */
+    box-shadow: none; /* Désactive l'ombre */
+    transition: opacity 0.5s ease; /* Garde la transition fluide */
+}
+
+
+#form-container.active {
+    display: block; /* Affiche le formulaire seulement quand nécessaire */
+    opacity: 1; /* Applique l'opacité à l'affichage */
+}
+
+#form-container {
+    opacity: 0; /* Formulaire invisible au départ */
+}
+
+/* Formulaire */
+form h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #388e3c; /* Vert intense */
+}
+
+form label {
+    font-size: 1em;
+    margin-top: 10px;
+    display: block;
+    color: #2f4f4f;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #43a047;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Message de remerciement */
+#thank-you-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #388e3c; /* Vert intense */
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Animation de fondu du message */
+    background-color: transparent; /* Remplace "white" par "transparent" */
+
+}
+
+/* Animation de fondu pour le message de remerciement */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+

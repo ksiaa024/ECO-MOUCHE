@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO-MOUCHE.tn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titre du projet -->
+    <div class="project-title">
+        <h1>ECO-MOUCHE</h1>
+    </div>
+
+    <!-- Section des choix -->
+    <div class="choices">
+        <h2>Que souhaitez-vous faire ?</h2>
+        <div class="buttons">
+            <button onclick="showForm('don')">Faire un Don</button>
+            <button onclick="showForm('location')">Utiliser le Service</button>
+        </div>
+    </div>
+
+    <!-- Conteneur pour afficher le formulaire -->
+    <div id="form-container"></div>
+
+    <!-- Message de remerciement -->
+    <div id="thank-you-message" style="display: none; margin-top: 20px; color: #388e3c; font-size: 1.2em;">
+        Merci beaucoup pour votre participation !
+    </div>
+
+    <footer>
+        © 2024 ECO-MOUCHE.tn - Tous droits réservés
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
